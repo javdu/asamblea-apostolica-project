@@ -1,8 +1,12 @@
 <?php
     class Inicio extends BaseController {
+
+    	protected $layout = 'layouts.frontend';
         
         public function index() {
-            return View::make('public/masterpage', array('name' => 'Taylor'));
-        }
+
+        	$aParam = array();
+        	$this->layout->content = View::make('frontend/home' , $aParam);
+    	}
     }
 ?>
