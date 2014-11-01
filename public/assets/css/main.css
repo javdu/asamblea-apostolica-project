@@ -27,9 +27,8 @@ body {
 }
 
 .container-page {
-    margin: auto;
-    width: 70%;
-    padding: 0px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 #myCarousel {
@@ -48,7 +47,6 @@ body {
 .music-top {
     height: 435px;
     background: #C0392B;
-    padding: 0px;
 }
 
 .music-top ul {
@@ -92,6 +90,11 @@ body {
 }
 
 #footer {
-    height: 300;
+    height: 200px;
+    width: 100%;
     background: #000;
+}
+
+.row {
+
 }

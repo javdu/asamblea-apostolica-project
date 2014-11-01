@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 @section('content')
     <div class="row">
-        <div class="col-md-12" style="padding: 0px;">
+        <div class="col-md-12" >
             <div id="myCarousel" class="carousel slide">
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" style="margin: 0px;">
         <div class="col-md-5 music-top">
             <h2 style="text-align: center;">TOP 5 - TUS FAVORITOS</h2>
             <div id="list">
