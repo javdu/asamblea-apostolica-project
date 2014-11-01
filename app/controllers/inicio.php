@@ -8,5 +8,8 @@
         	$aParam = array();
         	$this->layout->content = View::make('frontend/home' , $aParam);
     	}
+        
+        
+        
     }
 ?>

@@ -1,15 +1,97 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 @font-face {
-    font-family: 'fontawesome';
+    /*font-family: 'fontawesome';
     src: url('fontawesome-webfont.eot?') format('eot'),
     url('fontawesome-webfont.woff') format('woff'),
-    url('fontawesome-webfont.ttf') format('truetype');
+    url('fontawesome-webfont.ttf') format('truetype');*/
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url("http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    /*background: #EAEAEA;*/
+}
+.navbar {
+    min-height: 30px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
-p {
-    font-family: 'Roboto', sans-serif; font-weight: 400;
+.navbar-nav a {
+    border: 0px !important;
+    padding-top:  5px !important;
+    padding-booton:  5px !important;
+}
+
+.container-page {
+    margin: auto;
+    width: 70%;
+    padding: 0px;
+}
+
+#myCarousel {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#myCarousel img {
+    height: 400px;
+    width: 100%;
+}
+
+.music-top {
+    height: 435px;
+    background: #C0392B;
+    padding: 0px;
+}
+
+.music-top ul {
+    list-style:none;
+    padding: 0px;
+}
+
+.music-top li {
+    height: 70px;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: dotted 1px #FFF;
+    color: #FFF;
+}
+
+.music-top li img{
+    padding: 13px 17px 0px 13px;
+    float: left;
+}
+
+.music-top li p{
+    margin:2px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.music-top li audio{
+    margin: 0px;
+    padding: 0px;
+    vertical-align:middle;
+}
+
+.versiculo-del-dia-home {
+    height: 250px;
+    background: #37D077;
+}
+
+.reflexion-semanal-home {
+    height: 250px;
+    background: #52B3D9;
+}
+
+#footer {
+    height: 300;
+    background: #000;
 }

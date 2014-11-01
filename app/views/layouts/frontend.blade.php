@@ -7,17 +7,20 @@
         {{ HTML::style( asset('assets/bootstrap/dist/css/bootstrap-image-gallery.min.css') ) }}
         <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
         {{ HTML::script(asset('assets/bootstrap/dist/js/bootstrap.js')) }}
-        {{ HTML::script(asset('assets/bootstrap/dist/js/jquery.js')) }}
+        {{ HTML::script(asset('assets/js/jquery-2.1.1.min.js')) }}
         {{ HTML::script(asset('assets/bootstrap/dist/js/bootstrap.min.js')) }}
         {{ HTML::script(asset('assets/bootstrap/docs-assets/js/holder.js')) }}
         {{ HTML::script(asset('assets/js/jquery-ui-1.10.4.custom.js')) }}
         <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
         {{ HTML::script(asset('assets/bootstrap/dist/js/bootstrap-image-gallery.min.js')) }}
         {{ HTML::script(asset('assets/lite-uploader-master/jquery.liteuploader.js')) }}
+        {{ HTML::style( asset('assets/css/main.css') ) }}
     </head>
     <body>
-        @include('frontend.sidebar')
-        @yield('content')
-        @include('frontend.footer')
+        <div class="container container-page">
+            @include('frontend.sidebar')
+            @yield('content')
+            @include('frontend.footer')
+        </div>
     </body>
 </html>

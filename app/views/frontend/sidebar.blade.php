@@ -1,7 +1,7 @@
 <div class="navbar-wrapper">
-  <div class="container container-navbar">
+  <div class="container">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-page">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -12,7 +12,7 @@
           <img src="{{asset('assets/img/logo-footer.png')}}" alt="" title="" border="0" height="50" class="img-sidebar"/>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav" id="menuprincipal">
+          <ul class="nav navbar-nav">
             <li class="{{Request::path() == 'inicio' ? 'active' : '';}}"><a href="{{ URL::to('inicio') }}">Principal</a></li>
             <li class="{{Request::path() == 'frontend/labiblioteca' ? 'active' : '';}}"><a href="{{ URL::to('frontend/labiblioteca') }}">La biblioteca</a></li>
             <li class="{{Request::path() == 'frontend/talleres' ? 'active' : '';}}"><a href="{{ URL::to('frontend/talleres') }}">Talleres</a></li>
