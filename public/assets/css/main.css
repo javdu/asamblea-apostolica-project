@@ -12,23 +12,25 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
     /*background: #EAEAEA;*/
 }
 .navbar {
-    min-height: 30px;
-    height: 30px;
+    #min-height: 30px;
+    height: 50px;
     font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .navbar-nav a {
     border: 0px !important;
-    padding-top:  5px !important;
+    padding-top:  15px !important;
     padding-booton:  5px !important;
 }
 
 .container-page {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
 #myCarousel {
@@ -45,7 +47,7 @@ body {
 }
 
 .music-top {
-    height: 435px;
+    height: 470px;
     background: #C0392B;
 }
 
@@ -80,13 +82,123 @@ body {
 }
 
 .versiculo-del-dia-home {
-    height: 250px;
+    height: 235px;
     background: #37D077;
 }
 
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.versiculo-del-dia-home:hover
+{
+    opacity:0.85;
+}
+
+.versiculo-del-dia-home .versiculo {
+    text-align: justify;
+    font-weight: lighter;
+    color: #FFF;
+    font-size: medium;
+    padding: 0 20px 0 20px;
+}
+
+.versiculo-del-dia-home .fundamento-biblico {
+    text-align: right;
+    font-weight: lighter;
+    color: #FFF;
+    font-size: small;
+    padding: 0 20px 0 20px;
+}
+
 .reflexion-semanal-home {
-    height: 250px;
+    height: 235px;
     background: #52B3D9;
+}
+
+.reflexion-semanal-home:hover
+{
+    opacity:0.85;
+}
+
+.reflexion-semanal-home .versiculo {
+    text-align: justify;
+    font-weight: lighter;
+    color: #FFF;
+    font-size: medium;
+    padding: 0 20px 0 20px;
+}
+
+.reflexion-semanal-home .fundamento-biblico {
+    text-align: right;
+    font-weight: lighter;
+    color: #FFF;
+    font-size: small;
+    padding: 0 20px 0 20px;
 }
 
 #footer {

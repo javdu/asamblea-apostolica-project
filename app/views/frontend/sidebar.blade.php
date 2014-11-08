@@ -13,13 +13,13 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="{{Request::path() == 'inicio' ? 'active' : '';}}"><a href="{{ URL::to('inicio') }}">Principal</a></li>
-            <li class="{{Request::path() == 'frontend/labiblioteca' ? 'active' : '';}}"><a href="{{ URL::to('frontend/labiblioteca') }}">La biblioteca</a></li>
-            <li class="{{Request::path() == 'frontend/talleres' ? 'active' : '';}}"><a href="{{ URL::to('frontend/talleres') }}">Talleres</a></li>
-            <li class="{{Request::path() == 'frontend/actividades' ? 'active' : '';}}"><a href="{{ URL::to('frontend/actividades') }}">Actividades</a></li>
-            <li class="{{Request::path() == 'frontend/noticias' ? 'active' : '';}}"><a href="{{ URL::to('frontend/noticias') }}">Noticias</a></li>
-            <li class="{{Request::path() == 'frontend/multimedia' ? 'active' : '';}}"><a href="{{ URL::to('frontend/multimedia') }}">Galer&iacute;a</a></li>
-            <li class="{{Request::path() == 'frontend/contactos' ? 'active' : '';}}"><a href="{{ URL::to('frontend/contactos') }}">Contactos</a></li>
+            <li class="{{Request::path() == 'inicio' ? 'active' : '';}}"><a href="{{ URL::to('inicio') }}">PRINCIPAL</a></li>
+            <li class="{{Request::path() == 'frontend/labiblioteca' ? 'active' : '';}}"><a href="{{ URL::to('frontend/labiblioteca') }}">LA BIBLIOTECA</a></li>
+            <li class="{{Request::path() == 'frontend/talleres' ? 'active' : '';}}"><a href="{{ URL::to('frontend/talleres') }}">TALLERES</a></li>
+            <li class="{{Request::path() == 'frontend/actividades' ? 'active' : '';}}"><a href="{{ URL::to('frontend/actividades') }}">ACTIVIDADES</a></li>
+            <li class="{{Request::path() == 'frontend/noticias' ? 'active' : '';}}"><a href="{{ URL::to('frontend/noticias') }}">NOTICIAS</a></li>
+            <li class="{{Request::path() == 'frontend/multimedia' ? 'active' : '';}}"><a href="{{ URL::to('frontend/multimedia') }}">GALERIA</a></li>
+            <li class="{{Request::path() == 'frontend/contactos' ? 'active' : '';}}"><a href="{{ URL::to('frontend/contactos') }}">CONTACTOS</a></li>
           </ul>
         </div>
       </div>

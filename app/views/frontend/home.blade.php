@@ -26,10 +26,11 @@
     </div>
     <div class="row" style="margin: 0px;">
         <div class="col-md-5 music-top">
-            <h2 style="text-align: center;">TOP 5 - TUS FAVORITOS</h2>
+            <h3 style="text-align: center;">TOP 5 - TUS FAVORITOS</h3>
+            <hr />
             <div id="list">
                 <ul>
-                    <li><img src="{{asset('assets/img/icons/musical.png')}}" /><p>1 - Evan Craft - Todo debo a El.</p><audio src="{{asset('assets/mp3/TodoDeboAEl.mp3')}}" controls></audio></li>
+                    <li><img src="{{asset('assets/img/icons/musical.png')}}" /><p>1 - Evan Craft - Todo debo a El.</p><audio src="{{asset('assets/mp3/TodoDeboAEl.mp3')}}" controls="play pause"></audio></li>
                     <li><img src="{{asset('assets/img/icons/musical.png')}}" /><p>2 - Evan Craft - Todo debo a El.</p><audio src="{{asset('assets/mp3/TodoDeboAEl.mp3')}}" controls></audio></li>
                     <li><img src="{{asset('assets/img/icons/musical.png')}}" /><p>3 - Evan Craft - Todo debo a El.</p><audio src="{{asset('assets/mp3/TodoDeboAEl.mp3')}}" controls></audio></li>
                     <li><img src="{{asset('assets/img/icons/musical.png')}}" /><p>4 - Evan Craft - Todo debo a El.</p><audio src="{{asset('assets/mp3/TodoDeboAEl.mp3')}}" controls></audio></li>
@@ -37,13 +38,26 @@
                 </ul>
             </div>
         </div>
+         
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-12 versiculo-del-dia-home">
-                    <h2 style="text-align: center;">VERSICULO DEL DIA</h2>
+                    <h3 style="text-align: center;">VERSICULO DEL DIA</h3>
+                    <hr />
+                    <p class="versiculo">
+                       Venid, aclamemos alegremente a Jehová; Cantemos con júbilo a la roca de nuestra salvación. 
+                       Lleguemos ante su presencia con alabanza; Aclamémosle con cánticos.
+                    </p>
+                    <p class="fundamento-biblico">Salmos 95:1-2</p>
                 </div>
                 <div class="col-md-12 reflexion-semanal-home">
-                    <h2 style="text-align: center;">REFLEXION SEMANAL</h2>
+                    <h3 style="text-align: center;">REFLEXION SEMANAL</h3>
+                    <hr />
+                    <p class="versiculo">
+                       La comunion intima de Jehova es con los que le temen, Y a ellos hará conocer su pacto.
+                       Mis ojos están siempre hacia Jehová, Porque él sacará mis pies de la red.
+                    </p>
+                    <p class="fundamento-biblico">Salmos 25:14-15</p>
                 </div>
             </div>
         </div>
@@ -52,7 +66,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.myCarousel').carousel('cycle'); 
+            $('.myCarousel').carousel('cycle');/*
+            $("div.versiculo-del-dia-home").mousemove(function(event){
+                $("div.versiculo-del-dia-home").animate({left:'100px'},"slow");
+            }); */
         });
     </script>
 @stop
